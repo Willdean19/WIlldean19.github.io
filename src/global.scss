@@ -1,0 +1,25 @@
+$mainColor: #000000;
+
+$width: 360px;
+$tab-width: 767px;
+$desktop-width: 1366px;
+
+@mixin mobile{
+  @media (min-width: #{$width}) and (max-width: #{$tab-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (min-width: #{$tab-width} and (max-width: #{$desktop-width - 342px})){
+    @content;
+  }
+}
+@mixin desktop{
+  @media (min-width: #{$desktop-width - 341px}){
+    @content
+  }
+}
+
+
+

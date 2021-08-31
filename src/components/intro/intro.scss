@@ -1,0 +1,243 @@
+@import "../../global.scss";
+/*@import "../../breakpoints.scss";*/
+
+
+.intro {
+  background-color: whitesmoke;
+  display: flex;
+
+      @include mobile{
+        flex-direction: column;
+        align-items: center;
+      }
+    /*  @include tablet{
+       align-items: center;
+      }*/
+
+  /*  @include media("<=phone") {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include media('>phone', '<=425px') {
+      flex-direction: column;
+      align-items: center;
+    }*/
+
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+    padding: 45px 0px 0px 45px;
+
+    @include mobile{
+      padding: 30px 0px 0px 0px;
+    }
+
+   /* @include tablet{
+      padding: 25px 0px 0px 0px;
+    }*/
+
+    /* @include media("<=tablet"){
+       padding: 25px 0px 0px 0px;
+     }*/
+
+    /*  @include media('<=phone') {
+        padding: 30px 0px 0px 0px;
+      }
+      @include media('>phone', '<=425px') {
+        padding: 30px 0px 0px 0px;
+      */
+
+
+    .imgContainer {
+      width: 900px;
+      height: 900px;
+      background-color: #7f7f7f;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+
+          @include mobile{
+            width: 355px;
+            height: 355px;
+          }
+
+        /*  @include tablet{
+            width: 510px;
+            height: 510px;
+          }*/
+
+      /*  @include media("<=phone") {
+          width: 355px;
+          height: 355px;
+        }
+        @include media('>phone', '<=425px') {
+          width: 355px;
+          height: 355px;
+        }*/
+
+      /* @include media(">=tablet"){
+         width: 510px;
+         height: 510px;
+       }*/
+      img {
+        height: 90%;
+
+           @include mobile{
+             height: 95%;
+           }
+
+           /*@include tablet{
+             height: 85%;
+           }*/
+        /* @include media("<=phone") {
+           height: 95%;
+         }
+         @include media('>phone', '<=425px') {
+           height: 95%;
+         }*/
+      }
+    }
+  }
+
+    .right {
+      flex: 0.5;
+      position: relative;
+
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-left: 40px;
+
+           @include mobile{
+             padding-left: 0px;
+             margin-top: -30px;
+             align-items: center;
+           }
+
+        /* @include media("<=phone") {
+           padding-left: 0px;
+           margin-top: -30px;
+           align-items: center;
+         }
+         @include media('>phone', '<=425px') {
+           padding-left: 0px;
+           margin-top: -30px;
+           align-items: center;
+         }*/
+
+        /* @include media(">=tablet"){
+           height: 90%;
+         }*/
+
+        h1 {
+          font-size: 85px;
+          margin: 10px 0px;
+
+          @include mobile{
+            font-size: 55px;
+            padding: 5px 0px 12px 0px;
+          }
+
+          /*@include media("<=phone") {
+            font-size: 55px;
+            padding: 5px 0px 12px 0px;
+          }
+          @include media('>phone', '<=425px') {
+            font-size: 55px;
+            padding: 5px 0px 12px 0px;
+          }*/
+          /* @include  media(">=tablet"){
+             font-size: 80px;
+           }*/
+        }
+
+        h2 {
+          font-size: 45px;
+
+              @include mobile{
+                padding-top: 20px;
+                font-size: 37px;
+              }
+
+          /*   @include media(">=phone") {
+               font-size: 37px;
+             }
+             @include media('>phone', '<=425px') {
+               font-size: 37px;
+             }*/
+          /* @include media(">=tablet"){
+             font-size: 47px;
+           }*/
+        }
+
+        h3 {
+          font-size: 35px;
+          padding-left: 20px;
+
+               @include mobile{
+                 padding-left: 0px;
+                 font-size: 23px;
+                 justify-content: center;
+                 padding-bottom: 5px;
+               }
+
+          /*   @include media(">=phone") {
+               padding-left: 0px;
+               font-size: 23px;
+               justify-content: center;
+               padding-bottom: 5px;
+             }
+             @include media('>phone', '<=425px') {
+               padding-left: 0px;
+               font-size: 23px;
+               justify-content: center;
+               padding-bottom: 5px;
+             }*/
+          /* @include media(">=tablet"){
+             font-size: 32px;
+           }*/
+        }
+
+        h4 {
+          font-size: 25px;
+          padding-left: 25px;
+
+
+          @include mobile{
+            padding-left: 0px;
+            font-size: 20px;
+            justify-content: center;
+          }
+
+          /*  @include media(">=phone") {
+            }
+            @include media('>phone', '<=425px') {
+              padding-left: 0px;
+              font-size: 20px;
+              justify-content: center;
+            }*/
+          /*  @include media(">=tablet"){
+              font-size: 30px;
+            }*/
+        }
+
+      }
+
+      a {
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+}
