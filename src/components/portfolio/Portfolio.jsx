@@ -20,7 +20,7 @@ export default function Portfolio() {
                     </a>
                     <a href="https://drive.google.com/drive/folders/1vwCF8b0TjWtA1reHWOLqAbR3cII0_TQZ?usp=sharing">
                     <div className="item">
-                        <img src="assets/UX_Design.png" alt=""/>
+                        <img src="assets/UX_design.png" alt=""/>
                         <h3>UX Design Project</h3>
                     </div>
                     </a>
